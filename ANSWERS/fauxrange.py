@@ -30,20 +30,11 @@ class fauxrange:
     def __iter__(self):
         return self
 
-r1 = fauxrange(10)
-print(list(r1))
+print(f"list(fauxrange(10): {list(fauxrange(10))}")
+print(f"list(fauxrange(1, 11): {list(fauxrange(1, 11))}")
+print(f"list(fauxrange(5, 51, 5): {list(fauxrange(5, 51, 5))}")
+print(f"list(fauxrange(10, 0, -1): {list(fauxrange(10, 0, -1))}")
+print(f"list(fauxrange(8, 23, 2): {list(fauxrange(8, 23, 2))}")
+print(f"list(fauxrange(50, 4, -5): {list(fauxrange(50, 4, -5))}")
 
-r2 = fauxrange(1, 11)
-print(list(r2))
 
-r3 = fauxrange(5, 101, 5)
-print(list(r3))
-
-r4 = fauxrange(10, 0, -1)
-print(list(r4))
-
-r5 = fauxrange(8, 23, 2)
-print(list(r5))
-
-r6 = fauxrange(100, 4, -5)
-print(list(r6))

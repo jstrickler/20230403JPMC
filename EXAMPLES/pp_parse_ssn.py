@@ -8,6 +8,7 @@ nums = '0' | '1' | '2' etc etc
 '''
 
 dash = Suppress('-')  # Define dash for readability
+# dash = '-'
 
 ssn_parser = Combine(
     Word(nums, exact=3)  # Match exactly 3 digits

@@ -18,3 +18,12 @@ print()
 s3, count = rx_code.subn("___", s) # subn returns tuple with result string and replacement count
 print("Made {} replacements".format(count))
 print(s3)
+
+y = "$foo $bar $blah"
+
+y2 = re.sub("\$", "%", y)
+print(f"y2: {y2}")
+
+
+
+

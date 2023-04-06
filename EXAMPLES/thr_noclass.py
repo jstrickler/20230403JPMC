@@ -1,4 +1,4 @@
-
+import pdb
 from threading import Thread, Lock
 import random
 import time
@@ -7,6 +7,8 @@ STDOUT_LOCK = Lock()
 
 def my_task(num):  # function to run in each thread
     time.sleep(random.randint(1, 3))
+    # if num == 5:
+    #     pdb.set_trace()
     with STDOUT_LOCK:
         print("Hello from thread {}".format(num))
 
@@ -16,3 +18,5 @@ for i in range(16):
     t.start()  # launch thread
 
 print("Done.")  # "Done" is printed immediately -- the threads are "in the background"
+
+

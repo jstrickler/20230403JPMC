@@ -1,0 +1,119 @@
+
+
+pat       "a pattern"   "pat the baby" "give the baby a pat"
+        "not compatible"
+
+p.t     "petunia"  "keep to the right"   "carpet cleaning"  "potent potables"
+
+p[aeiou]t
+
+p[^aeiou]t
+
+[0123456789]-[0123456789]-[0123456789]
+
+[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9]
+
+[-abc]
+
+x[^a-z]y     [A-z]
+
+[A-Fa-f0-9]
+
+\w [A-Za-z0-9_]  valid characters in variable names
+\d [0-9]    digits
+\s [ \t\n\r\f\b\v]   space characters
+
+J\.M\.S\.   only "J.M.S."
+J.M.S.   "JAMES "
+
+pat
+
+pa+t   pat  paat paaaaaaaaaaaaaaaaat
+pa*t   pt pat  paat paaaaaaaaaaaaaaaaat
+pa?t   pt pat  ONLY
+
+#  {min,max}   {min,}  {count}
+
+p[aeiou]{2}t     poet  peat pout  poot
+
+p[aeiou]{1,2}t   pat pot put pit pet pout
+
+\d{3}-\d{2}-\d{4}
+
+.*  match any number of chars (except \n)
+
+foo.*bar   longest match
+foo.*bar  shortest match
+
+"football barbells wombats badgers barbecue"
+
+foo.?bar  foobar  foo.bar foo bar  foo/bar  foo_bar  fooxbar
+
+*  {0,}
++  {1,}
+?  {0,1}
+
+^foo
+bar$
+
+^\d+$   "123"  "5"    NOT  " 123"  "583a"
+
+^\s*\d+\s*$
+
+re.M  re.MULTILINE
+^ matches after \n in text
+$ matches before \n
+
+\bspam
+
+ham\b
+
+\btoast\b
+
+JPMC|Chase
+
+mydata = "$apple $banana $walrus"
+
+newdata = mydata.replace('$','X')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

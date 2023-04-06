@@ -1,3 +1,4 @@
+NAME:TITLE:COLOR:QUEST:COMMENT
 Arthur:King:blue:The Grail:King of the Britons
 Galahad:Sir:red:The Grail:'I could handle some more peril'
 Lancelot:Sir:blue:The Grail:"It's too perilous!"

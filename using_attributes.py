@@ -22,13 +22,15 @@ class Dog:
 d = Dog()
 
 def bark(self):
+    self._thing
     print("Woof! Woof!")
 
 d.bark()
 
 setattr(Dog, 'bark', bark)
+x = list()
 
-d.bark()
+d.bark(x)
 
 #  getattr() hasattr() setattr() delattr()
 

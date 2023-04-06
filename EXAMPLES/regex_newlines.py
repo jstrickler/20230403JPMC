@@ -1,6 +1,7 @@
 
 import re
 
+
 s = """lorem ipsum M-302 dolor sit amet, consectetur r-99 adipiscing elit, sed do
  eiusmod tempor incididunt H-476 ut labore et dolore magna Q-51 aliqua. Ut enim 
 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex  

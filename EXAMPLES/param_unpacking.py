@@ -12,12 +12,17 @@ dates = [
     (1971, 1, 31),
     (1971, 7, 26),
     (1972, 4, 16),
-    (1927, 12, 7),
+    [1927, 12, 7],
 ]  # tuple of dates
 
-for dt in dates:
-    d = date(*dt)  # instead of date(dt[0], dt[1], dt[2])
-    print(d)
+# for dt in dates:
+#     d = date(*dt)  # instead of date(dt[0], dt[1], dt[2])
+#     print(d)
+
+py_dates = [date(*dt) for dt in dates]
+print(f"py_dates: {py_dates}\n")
+
+
 
 print()
 
@@ -33,3 +38,11 @@ sort_opts = {
 
 sorted_fruits = sorted(fruits, **sort_opts)  # dictionary converted to named parameters
 print(sorted_fruits)
+
+# import pandas as pd
+# args = {
+#     "use_cols": [2, 5, 9],
+#     "thousands": ",",
+#     "skiprows": 100,
+# }
+# df = pd.read_csv("myfile.csv", **args)

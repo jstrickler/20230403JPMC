@@ -17,5 +17,17 @@ class TrimmedFile:
 
 if __name__ == '__main__':
     trimmed = TrimmedFile('../DATA/mary.txt')  # To use the generator, create an instance and iterator over it.
+
+    iterator = iter(trimmed)
+    print(f"iterator: {iterator}")
     for line in trimmed:
         print(line)
+    print()
+    t = TrimmedFile('../DATA/mary.txt')
+    t_iter = iter(t)
+    while True:
+        try:
+            value = next(t_iter)
+            print(value)
+        except StopIteration:
+            break
